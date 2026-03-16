@@ -93,7 +93,7 @@
     .essence-desc { font-family: var(--body); font-size: 13px; font-weight: 350; color: var(--dark); line-height: 1.7; }
 
     .quote-section { padding: 80px; background: var(--white); border-top: 1px solid rgba(169,188,199,0.2); border-bottom: 1px solid rgba(169,188,199,0.2); text-align: center; }
-    .quote-text { font-family: var(--accent); font-size: clamp(20px, 3vw, 32px); font-weight: 400; font-style: italic; color: var(--dark); line-height: 1.4; max-width: 650px; margin: 0 auto; }
+    .quote-text { font-family: var(--body); font-size: clamp(20px, 3vw, 32px); font-weight: 350; font-style: italic; color: var(--dark); line-height: 1.4; max-width: 650px; margin: 0 auto; }
     .quote-attr { font-family: var(--body); font-size: 13px; font-weight: 350; color: var(--dark); margin-top: 24px; }
 
     .specimen { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
@@ -272,7 +272,7 @@
 
     .social-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; }
     .social-post { aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 32px; text-align: center; background: var(--white); border: 1px solid rgba(237,237,230,0.5); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
-    .social-post-text { font-family: var(--accent); font-size: 18px; font-weight: 400; font-style: italic; line-height: 1.4; color: var(--dark); }
+    .social-post-text { font-family: var(--body); font-size: 18px; font-weight: 350; font-style: italic; line-height: 1.4; color: var(--dark); }
     .social-post-tag { font-family: var(--body); font-size: 11px; font-weight: 400; margin-top: 16px; color: var(--dark); }
 
     .asset-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 40px; }
@@ -280,6 +280,18 @@
     .asset-card-title { font-family: var(--heading); font-size: 18px; font-weight: 500; color: var(--dark); margin-bottom: 6px; }
     .asset-card-desc { font-family: var(--body); font-size: 13px; font-weight: 350; color: var(--dark); line-height: 1.7; margin-bottom: 12px; }
     .asset-card-formats { font-family: var(--body); font-size: 12px; font-weight: 400; color: var(--blue); margin-top: auto; }
+    .asset-card-btn { display: inline-block; padding: 8px 20px; background: var(--blue); color: var(--white); font-family: var(--body); font-size: 12px; font-weight: 400; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 6px; text-decoration: none; margin-top: 16px; cursor: pointer; border: none; transition: background 0.2s; }
+    .asset-card-btn:hover { background: var(--charcoal); }
+    .asset-card-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .asset-card-link { display: inline-block; padding: 5px 12px; background: var(--light); color: var(--dark); font-family: var(--body); font-size: 11px; font-weight: 400; text-transform: uppercase; letter-spacing: 0.04em; border-radius: 4px; text-decoration: none; transition: background 0.2s, color 0.2s; }
+    .asset-card-link:hover { background: var(--blue); color: var(--white); }
+    .asset-logo-section { margin-top: 24px; }
+    .asset-logo-type { font-family: var(--body); font-size: 11px; font-weight: 400; text-transform: uppercase; letter-spacing: 0.06em; color: var(--charcoal); margin-bottom: 12px; margin-top: 20px; }
+    .asset-logo-type:first-child { margin-top: 0; }
+    .asset-logo-row { display: flex; align-items: center; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(237,237,230,0.5); }
+    .asset-logo-row:last-child { border-bottom: none; }
+    .asset-logo-name { font-family: var(--body); font-size: 13px; font-weight: 350; color: var(--dark); }
+    .asset-logo-downloads { display: flex; gap: 6px; }
 
     .footer { padding: 32px 80px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(169,188,199,0.25); background: var(--light); }
     .footer span { font-family: var(--body); font-size: 13px; color: var(--charcoal); }
@@ -482,7 +494,7 @@
       <!-- Section marker -->
       <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 32px;">
         <div style="width: 40px; height: 0.5px; background: var(--blue); opacity: 0.3;"></div>
-        <div style="font-family: var(--accent); font-size: 16px; color: var(--blue); opacity: 0.5;">i</div>
+        <div style="font-family: var(--body); font-size: 16px; color: var(--blue); opacity: 0.5;">i</div>
         <div style="width: 40px; height: 0.5px; background: var(--blue); opacity: 0.3;"></div>
       </div>
       <p class="manifesto-text">We believe every guest deserves a place that feels like it was designed <em>just for them</em>. Not generic. Not ordinary. Spaces shaped by <em>intention</em> and warmth.</p>
@@ -634,12 +646,11 @@
         </div>
         <div class="specimen-meta">
           <div class="specimen-name">EB Garamond</div>
-          <div class="specimen-designer">A classical old-style serif reserved for quotes, testimonials, and select editorial moments. Its refined proportions and italic swashes add warmth and literary elegance without competing with the primary typeface.</div>
+          <div class="specimen-designer">A classical old-style serif reserved for numbers, statistics, and data displays. Its refined proportions give numerical content a distinct editorial quality without competing with the primary typeface.</div>
           <div>
             <span class="specimen-tag">Old-Style Serif</span>
-            <span class="specimen-tag">Quotes + Editorial</span>
+            <span class="specimen-tag">Numbers + Data</span>
             <span class="specimen-tag">Weights 400-700</span>
-            <span class="specimen-tag">Italic Swashes</span>
           </div>
           <div class="specimen-chars" style="font-family: var(--accent);">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</div>
           <div class="specimen-chars" style="font-family: var(--accent); font-size: 16px;">0123456789 &amp; $ % @ ! ? ( ) { } [ ]</div>
@@ -656,7 +667,7 @@
           <div class="scale-row"><div class="scale-size">16px</div><div class="scale-role">Body</div><div style="font-family: var(--body); font-size: 16px; font-weight: 400; color: var(--dark); line-height: 1.5;">Standout properties in standout locations, built for guests who expect more.</div></div>
           <div class="scale-row"><div class="scale-size">13px</div><div class="scale-role">Caption</div><div style="font-family: var(--body); font-size: 13px; font-weight: 400; color: var(--dark); line-height: 1.6; text-transform: uppercase; letter-spacing: 0.05em;">Rates and availability subject to seasonal adjustments. Minimum stay requirements may apply.</div></div>
           <div class="scale-row"><div class="scale-size">11px</div><div class="scale-role">Label</div><div style="font-family: var(--body); font-size: 11px; font-weight: 400; color: var(--dark);">Kasu Resorts</div></div>
-          <div class="scale-row" style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--light);"><div class="scale-size">22px</div><div class="scale-role" style="color: var(--blue);">Quote</div><div style="font-family: var(--accent); font-size: 22px; font-weight: 400; font-style: italic; color: var(--dark); line-height: 1.4;">"The kind of place that makes you cancel your other plans."</div></div>
+          <div class="scale-row" style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--light);"><div class="scale-size">22px</div><div class="scale-role" style="color: var(--blue);">Quote</div><div style="font-family: var(--body); font-size: 22px; font-weight: 350; font-style: italic; color: var(--dark); line-height: 1.4;">"The kind of place that makes you cancel your other plans."</div></div>
         </div>
       </div>
     </section>
@@ -666,7 +677,7 @@
         <div class="pairing-card"><div class="pairing-heading">Arrive curious. Leave inspired.</div><div class="pairing-body">Every Kasu property is built around things guests actually notice. The layout, the materials, the light. Your stay starts the second you walk in.</div></div>
         <div class="pairing-card"><div class="pairing-heading">Spaces designed for living.</div><div class="pairing-body">Open floor plans, natural light, and interiors that balance beauty with comfort. Because a resort should feel as good as it looks.</div></div>
         <div class="pairing-card"><div class="pairing-heading">Your home away from everything.</div><div class="pairing-body">The best trip is one where you stop thinking about logistics. No fuss, no friction. Just a great place that works the way it should.</div></div>
-        <div class="pairing-card"><div class="pairing-heading">Guest review</div><div style="font-family: var(--accent); font-size: 22px; font-weight: 400; font-style: italic; color: var(--dark); line-height: 1.5; margin-top: 8px;">"We came for one night and stayed for three. That says everything."</div><div class="pairing-body" style="margin-top: 16px; font-size: 13px;">- Sarah L., Napa Valley</div></div>
+        <div class="pairing-card"><div class="pairing-heading">Guest review</div><div style="font-family: var(--body); font-size: 22px; font-weight: 350; font-style: italic; color: var(--dark); line-height: 1.5; margin-top: 8px;">"We came for one night and stayed for three. That says everything."</div><div class="pairing-body" style="margin-top: 16px; font-size: 13px;">- Sarah L., Napa Valley</div></div>
       </div>
     </section>
     <section class="section" style="padding-top: 0;">
@@ -678,13 +689,13 @@
           <div class="dodont-item">Keep body text at 400 weight for comfortable reading</div>
           <div class="dodont-item">Maintain generous line height (1.4-1.8) for breathing room</div>
           <div class="dodont-item">Use negative letter-spacing (-1px to -2px) on display headlines only</div>
-          <div class="dodont-item">Use EB Garamond exclusively for quotes, testimonials, and editorial italic moments</div>
+          <div class="dodont-item">Use EB Garamond exclusively for numbers, statistics, and data displays</div>
         </div>
         <div>
           <div class="dodont-title dont">Don't</div>
           <div class="dodont-item">Don't use more than two type sizes on a single card or component</div>
           <div class="dodont-item">Don't stretch, compress, or outline the letterforms</div>
-          <div class="dodont-item">Don't use EB Garamond for headlines, buttons, labels, or navigation</div>
+          <div class="dodont-item">Don't use EB Garamond for headlines, quotes, body text, buttons, labels, or navigation</div>
           <div class="dodont-item">Don't set all-caps above 14px. Reserve uppercase for tags and labels</div>
           <div class="dodont-item">Don't use light weights (200-300) below 16px. They lose legibility</div>
         </div>
@@ -1496,7 +1507,7 @@
             <div style="position: absolute; bottom: 16px; right: 16px; width: 28px; height: 1px; background: var(--charcoal);"></div>
             <div style="position: absolute; bottom: 16px; right: 16px; width: 1px; height: 28px; background: var(--charcoal);"></div>
             <div style="text-align: center;">
-              <div style="font-family: var(--accent); font-size: 18px; font-style: italic; color: var(--dark); line-height: 1.5;">"The kind of place that makes you cancel your other plans."</div>
+              <div style="font-family: var(--body); font-size: 18px; font-weight: 350; font-style: italic; color: var(--dark); line-height: 1.5;">"The kind of place that makes you cancel your other plans."</div>
               <div style="font-family: var(--body); font-size: 11px; font-weight: 350; color: var(--charcoal); margin-top: 12px;">Guest Review</div>
             </div>
           </div>
@@ -1954,7 +1965,7 @@
         </div>
         <div class="social-template-card">
           <div class="social-template-mockup" style="background: var(--blue);">
-            <div style="font-family: var(--accent); font-size: 22px; font-style: italic; color: #fff; line-height: 1.5; max-width: 320px;">&ldquo;Kasu made us feel like the property was designed just for us.&rdquo;</div>
+            <div style="font-family: var(--body); font-size: 22px; font-weight: 350; font-style: italic; color: #fff; line-height: 1.5; max-width: 320px;">&ldquo;Kasu made us feel like the property was designed just for us.&rdquo;</div>
             <div style="font-family: var(--body); font-size: 15px; font-weight: 350; color: #fff; margin-top: 28px; opacity: 0.7;">Elena M., Napa Valley</div>
           </div>
           <div class="social-template-label">Testimonial Post</div>
@@ -1966,7 +1977,7 @@
             <div style="font-family: var(--body); font-size: 13px; font-weight: 350; color: #2f2f2f; margin-top: 20px; opacity: 0.6;">kasuresorts.com</div>
           </div>
           <div class="social-template-label">Brand Awareness</div>
-          <div class="social-template-desc">Light gradient with headline in EB Garamond. Clean and editorial.</div>
+          <div class="social-template-desc">Light gradient with large stat number in EB Garamond. Clean and editorial.</div>
         </div>
         <div class="social-template-card">
           <div class="social-template-mockup" style="background: linear-gradient(180deg, #fff 0%, var(--cream) 100%); border: 1px solid rgba(169,188,199,0.25); justify-content: flex-start; align-items: stretch; text-align: left;">
@@ -2060,7 +2071,7 @@
         </div>
         <div class="social-template-card">
           <div class="social-story-mockup" style="background: var(--white);">
-            <div style="font-family: var(--accent); font-size: 20px; font-style: italic; color: #2f2f2f; line-height: 1.5; max-width: 240px;">&ldquo;The kind of place that makes you cancel your other plans.&rdquo;</div>
+            <div style="font-family: var(--body); font-size: 20px; font-weight: 350; font-style: italic; color: #2f2f2f; line-height: 1.5; max-width: 240px;">&ldquo;The kind of place that makes you cancel your other plans.&rdquo;</div>
             <div style="font-family: var(--body); font-size: 15px; font-weight: 350; color: #2f2f2f; margin-top: 28px; opacity: 0.7;">James R., Austin</div>
           </div>
           <div class="social-template-label">Testimonial Story</div>
@@ -2344,7 +2355,7 @@
             <div style="position: absolute; top: 20px; left: 48px; width: 1px; height: 20px; background: var(--blue); opacity: 0.25;"></div>
             <div style="position: absolute; bottom: 20px; right: 48px; width: 20px; height: 1px; background: var(--blue); opacity: 0.25;"></div>
             <div style="position: absolute; bottom: 20px; right: 48px; width: 1px; height: 20px; background: var(--blue); opacity: 0.25;"></div>
-            <div style="font-family: var(--accent); font-size: 16px; font-style: italic; color: var(--dark); line-height: 1.5; max-width: 400px; margin: 0 auto;">"The kind of place that makes you cancel your other plans."</div>
+            <div style="font-family: var(--body); font-size: 16px; font-weight: 350; font-style: italic; color: var(--dark); line-height: 1.5; max-width: 400px; margin: 0 auto;">"The kind of place that makes you cancel your other plans."</div>
             <div style="font-family: var(--body); font-size: 10px; font-weight: 350; color: var(--blue); margin-top: 12px; text-transform: uppercase; letter-spacing: 1.5px;">Elena M. / Napa Valley</div>
           </div>
           <!-- Footer -->
@@ -2624,19 +2635,19 @@
       <div class="section-label">Downloads</div>
       <div class="asset-grid">
         <div class="asset-card">
-          <div class="asset-card-title">Logo Package</div>
-          <div class="asset-card-desc">Full lockup, stacked lockup, wordmark, and icon mark in all color variants. Includes Kasu Casa sub-brand versions.</div>
-          <div class="asset-card-formats">SVG, PNG, EPS</div>
-        </div>
-        <div class="asset-card">
           <div class="asset-card-title">Typography</div>
-          <div class="asset-card-desc">Neue Haas Grotesk font files for desktop and web use. All weights from 200 to 700.</div>
-          <div class="asset-card-formats">OTF, WOFF2</div>
+          <div class="asset-card-desc">Neue Haas Grotesk font reference document. Includes weight samples, usage notes, and licensing details.</div>
+          <div class="asset-card-formats">DOCX</div>
+          <a href="KS - Typography/Neue Haas Grotesk.docx" download class="asset-card-btn">Download</a>
         </div>
         <div class="asset-card">
           <div class="asset-card-title">Brand Guidelines</div>
           <div class="asset-card-desc">The complete Kasu brand guidelines set covering logo systems, color, type, voice, applications, and a synced markdown version for sharing or editing.</div>
           <div class="asset-card-formats">PDF, MD</div>
+          <div class="asset-card-links">
+            <a href="Brand Guidelines/Kasu_Brand Guidelines_2026_v2.pdf" download class="asset-card-link">PDF</a>
+            <a href="#" onclick="downloadStyleGuide(); return false;" class="asset-card-link">MD</a>
+          </div>
         </div>
         <div class="asset-card">
           <div class="asset-card-title">Icon Library</div>
@@ -2644,6 +2655,61 @@
           <div class="asset-card-formats">SVG</div>
         </div>
       </div>
+    </section>
+    <section class="section" style="padding-top: 0;">
+      <div class="section-label">Logo Package</div>
+      <div class="asset-card-desc" style="margin-bottom: 24px;">Full lockup, stacked lockup, wordmark, and icon mark in all color variants. Includes Kasu Casa sub-brand versions. SVG and PNG formats.</div>
+      <div class="asset-logo-type">Full Lockup</div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Black</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Full Lockup /Kasu_Lockup_Black.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Full Lockup /Kasu_Lockup_Black.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Charcoal</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Full Lockup /Kasu_Lockup_Charcoal.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Full Lockup /Kasu_Lockup_Charcoal.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Cloud</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Full Lockup /Kasu_Lockup_Cloud.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Full Lockup /Kasu_Lockup_Cloud.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Cream</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Full Lockup /Kasu_Lockup_Cream.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Full Lockup /Kasu_Lockup_Cream.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Light Blue</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Full Lockup /Kasu_Lockup_Light Blue.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Full Lockup /Kasu_Lockup_Light Blue.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Medium Blue</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Full Lockup /Kasu_Lockup_Medium Blue.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Full Lockup /Kasu_Lockup_Medium Blue.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">White</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Full Lockup /Kasu_Lockup_White.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Full Lockup /Kasu_Lockup_White.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-type" style="margin-top: 12px; padding-top: 12px; font-size: 10px; opacity: 0.7;">Kasu Casa — Full Lockup</div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Black</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Full Lockup /Kasu Casa /Kasu_Casa_Lockup_Black.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Full Lockup /Kasu Casa /Kasu_Casa_Lockup_Black.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Charcoal</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Full Lockup /Kasu Casa /Kasu_Casa_Lockup_Charcoal.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Full Lockup /Kasu Casa /Kasu_Casa_Lockup_Charcoal.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Cloud</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Full Lockup /Kasu Casa /Kasu_Casa_Lockup_Cloud.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Full Lockup /Kasu Casa /Kasu_Casa_Lockup_Cloud.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Cream</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Full Lockup /Kasu Casa /Kasu_Casa_Lockup_Cream.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Full Lockup /Kasu Casa /Kasu_Casa_Lockup_Cream.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Light Blue</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Full Lockup /Kasu Casa /Kasu_Casa_Lockup_Light Blue.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Full Lockup /Kasu Casa /Kasu_Casa_Lockup_Light Blue.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Medium Blue</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Full Lockup /Kasu Casa /Kasu_Casa_Lockup_Medium Blue.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Full Lockup /Kasu Casa /Kasu_Casa_Lockup_Medium Blue.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">White</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Full Lockup /Kasu Casa /Kasu_Casa_Lockup_White.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Full Lockup /Kasu Casa /Kasu_Casa_Lockup_White.png" download class="asset-card-link">PNG</a></div></div>
+
+      <div class="asset-logo-type">Stacked Lockup</div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Black</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Stacked /Kasu_Stacked_Lockup_Black.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Stacked /Kasu_Stacked_Lockup_Black.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Charcoal</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Stacked /Kasu_Stacked_Lockup_Charcoal.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Stacked /Kasu_Stacked_Lockup_Charcoal.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Cloud</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Stacked /Kasu_Stacked_Lockup_Cloud.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Stacked /Kasu_Stacked_Lockup_Cloud.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Cream</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Stacked /Kasu_Stacked_Lockup_Cream.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Stacked /Kasu_Stacked_Lockup_Cream.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Light Blue</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Stacked /Kasu_Stacked_Lockup_Light Blue.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Stacked /Kasu_Stacked_Lockup_Light Blue.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Medium Blue</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Stacked /Kasu_Stacked_Lockup_Medium Blue.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Stacked /Kasu_Stacked_Lockup_Medium Blue.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">White</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Stacked /Kasu_Stacked_Lockup_White.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Stacked /Kasu_Stacked_Lockup_White.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-type" style="margin-top: 12px; padding-top: 12px; font-size: 10px; opacity: 0.7;">Kasu Casa — Stacked Lockup</div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Black</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Stacked /Kasu Casa/Kasu_Casa_Stacked_Lockup_Black.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Stacked /Kasu Casa/Kasu_Casa_Stacked_Lockup_Black.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Charcoal</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Stacked /Kasu Casa/Kasu_Casa_Stacked_Lockup_Charcoal.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Stacked /Kasu Casa/Kasu_Casa_Stacked_Lockup_Charcoal.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Cloud</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Stacked /Kasu Casa/Kasu_Casa_Stacked_Lockup_Cloud.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Stacked /Kasu Casa/Kasu_Casa_Stacked_Lockup_Cloud.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Cream</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Stacked /Kasu Casa/Kasu_Casa_Stacked_Lockup_Cream.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Stacked /Kasu Casa/Kasu_Casa_Stacked_Lockup_Cream.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Light Blue</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Stacked /Kasu Casa/Kasu_Casa_Stacked_Lockup_Light Blue.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Stacked /Kasu Casa/Kasu_Casa_Stacked_Lockup_Light Blue.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Medium Blue</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Stacked /Kasu Casa/Kasu_Casa_Stacked_Lockup_Medium Blue.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Stacked /Kasu Casa/Kasu_Casa_Stacked_Lockup_Medium Blue.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">White</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Stacked /Kasu Casa/Kasu_Casa_Stacked_Lockup_White.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Stacked /Kasu Casa/Kasu_Casa_Stacked_Lockup_White.png" download class="asset-card-link">PNG</a></div></div>
+
+      <div class="asset-logo-type">Icon Mark</div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Black</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Icon/Kasu_Icon_Black.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Icon/Kasu_Icon_Black.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Charcoal</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Icon/Kasu_Icon_Charcoal.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Icon/Kasu_Icon_Charcoal.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Cloud</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Icon/Kasu_Icon_Cloud.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Icon/Kasu_Icon_Cloud.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Cream</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Icon/Kasu_Icon_Cream.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Icon/Kasu_Icon_Cream.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Light Blue</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Icon/Kasu_Icon_Light Blue.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Icon/Kasu_Icon_Light Blue.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Medium Blue</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Icon/Kasu_Icon_Medium Blue.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Icon/Kasu_Icon_Medium Blue.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">White</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Icon/Kasu_Icon_White.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Icon/Kasu_Icon_White.png" download class="asset-card-link">PNG</a></div></div>
+
+      <div class="asset-logo-type">Wordmark</div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Black</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Wordmark/Kasu_Wordmark_Black.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Wordmark/Kasu_Wordmark_Black.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Charcoal</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Wordmark/Kasu_Wordmark_Charcoal.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Wordmark/Kasu_Wordmark_Charcoal.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Cloud</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Wordmark/Kasu_Wordmark_Cloud.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Wordmark/Kasu_Wordmark_Cloud.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Cream</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Wordmark/Kasu_Wordmark_Cream.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Wordmark/Kasu_Wordmark_Cream.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Light Blue</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Wordmark/Kasu_Wordmark_Light Blue.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Wordmark/Kasu_Wordmark_Light Blue.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">Medium Blue</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Wordmark/Kasu_Wordmark_Medium Blue.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Wordmark/Kasu_Wordmark_Medium Blue.png" download class="asset-card-link">PNG</a></div></div>
+      <div class="asset-logo-row"><span class="asset-logo-name">White</span><div class="asset-logo-downloads"><a href="KS - Logos/KS - Wordmark/Kasu_Wordmark_White.svg" download class="asset-card-link">SVG</a><a href="KS - Logos/KS - Wordmark/Kasu_Wordmark_White.png" download class="asset-card-link">PNG</a></div></div>
     </section>
   </div>
 
@@ -2888,12 +2954,12 @@ var styleGuideMD = [
   '| Caption | Neue Haas Grotesk | 400 | 13px | 0.05em | Uppercase |',
   '| Data | Neue Haas Grotesk | 500 | 14px | 0 |',
   '| Tag | Neue Haas Grotesk | 500 | 11px | 0.08em |',
-  '| Quote | EB Garamond | 400i | 28px | 0 |',
+  '| Quote | Neue Haas Grotesk | 350i | 22px | 0 |',
   '| Numbers | EB Garamond | 400 | varies | 0 |',
   '',
   '### Hierarchy Rules',
   '- Neue Haas Grotesk is the primary typeface for headlines, body, UI, and labels',
-  '- EB Garamond (serif) is used for numbers, statistics, quotes, testimonials, and editorial italic moments',
+  '- EB Garamond (serif) is used exclusively for numbers, statistics, and data displays',
   '- Weight variation (200-700) within Neue Haas Grotesk creates all structural hierarchy',
   '',
   '### Line Heights',
